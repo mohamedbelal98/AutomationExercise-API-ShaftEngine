@@ -1,0 +1,16 @@
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                        Starting Execution: '1 out of 1' test cases in the current suite                                        
+                                         Test Method: 'TestFakeRestApi.TestActivities.getAllActivities'                                         
+                                                     Test Description: 'Get All Activities'                                                     
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[ReportManager] Response status code: "200", status line: "HTTP/1.1 200 OK" @30-05-2023 12:16:14.0557 PM
+[ReportManager] Assertion "ValidateComparativeRelation" PASSED. Expected "200" and Actual "200". Comparison Type "EQUALS". Validation Type "POSITIVE". @30-05-2023 12:16:14.0565 PM
+[ReportManager] Assertion Passed: Evaluating the actual response status code 200 against the expected one 200... @30-05-2023 12:16:14.0565 PM
+[ReportManager] Perform request "GET | Target Status Code: 200 | Service URL: https://fakerestapi.azurewebsites.net/api/v1/Activities | Content Type: application/json | Response Time: 972ms". @30-05-2023 12:16:15.0015 PM
+[ReportManager] Successfully created attachment 'API Request - Specifications' @30-05-2023 12:16:15.0016 PM
+[ReportManager] Successfully created attachment 'API Response - JSON Body' @30-05-2023 12:16:15.0104 PM
+[ReportManager] Expected "200", and actual "200" @30-05-2023 12:16:15.0106 PM
+[ReportManager] Assertion "ValidateEquals" PASSED. Expected "200" and Actual "200". Comparison Type "EQUALS". Validation Type "POSITIVE". @30-05-2023 12:16:15.0108 PM
+[ReportManager] Assertion Passed: Verify the status code is equal 200 @30-05-2023 12:16:15.0108 P
