@@ -89,4 +89,55 @@ public class TestActivities {
                 isEqualTo("true").withCustomReportMessage("Verify the completed is equal to my input").perform();
     }
 
+    @Test(description = "Update Activity information for Single Activity")
+    @Epic("Activities")
+    public void updateActivity() {
+
+        String id = "5";
+        String title = jsonFileManager.getTestData("title");
+        String dueDate = jsonFileManager.getTestData("dueDate");
+
+        JSONObject updateActivityBody = activitiesResolver.createActivityBody(
+                title,
+                dueDate,
+                true
+        );
+
+        try {
+            Response updateActivityResponse = activitiesRequest.updateActivity(id, updateActivityBody);
+
+            var statusCode = updateActivityResponse.getStatusCode();
+
+            Validations.assertThat().object(statusCode).isEqualTo(200).
+                    withCustomReportMessage("Verify the status code is equal 200").perform();
+
+            Validations.verifyThat().response(updateActivityResponse).extractedJsonValue("title").
+                    isEqualTo(title).withCustomReportMessage("Verify the title is equal to my input").perform();
+
+            Validations.verifyThat().response(updateActivityResponse).extractedJsonValue("dueDate").
+                    isEqualTo(dueDate).withCustomReportMessage("Verify the dueDate is equal to my input").perform();
+
+            Validations.verifyThat().response(updateActivityResponse).extractedJsonValue("completed").
+                    isEqualTo("true").withCustomReportMessage("Verify the completed is equal to my input").perform();
+
+        } catch (IllegalArgumentException i) {
+            System.out.println("IllegalArgumentException error" + i);
+        }
+
+    }
+
+    @Test(description = "Delete an Activity")
+    @Epic("Activities")
+    public void deleteActivity() {
+
+        String id = "13";
+
+        Response deleteActivityResponse = activitiesRequest.deleteActivity(id);
+
+        var statusCode = deleteActivityResponse.getStatusCode();
+
+        Validations.assertThat().object(statusCode).isEqualTo(200).
+                withCustomReportMessage("Verify the status code is equal 200").perform();
+    }
+
 }

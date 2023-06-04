@@ -12,12 +12,12 @@ public class ActivitiesResolver {
      */
     public JSONObject createActivityBody(String title, String dueDate, boolean completed) {
 
-        JSONObject activities = new JSONObject();
-        activities.put("title", title);
-        activities.put("dueDate", dueDate);
-        activities.put("completed", completed);
+        JSONObject activity = new JSONObject();
+        activity.put("title", title);
+        activity.put("dueDate", dueDate);
+        activity.put("completed", completed);
 
-        return activities;
+        return activity;
     }
 
 }

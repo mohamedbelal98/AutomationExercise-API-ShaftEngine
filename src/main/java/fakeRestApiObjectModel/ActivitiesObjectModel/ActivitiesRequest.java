@@ -26,7 +26,17 @@ public class ActivitiesRequest {
 
     public Response getSingleActivityByID(String id) {
 
-        return apiObject.get(activitiesEndPoint + "/" + id).setContentType(ContentType.JSON).setTargetStatusCode(200).perform();
+        return apiObject.get(activitiesEndPoint + id).setContentType(ContentType.JSON).setTargetStatusCode(200).perform();
+    }
+
+    public Response updateActivity(String id, JSONObject requestBody) {
+
+        return apiObject.put(activitiesEndPoint + id).setContentType(ContentType.JSON).setRequestBody(requestBody).setTargetStatusCode(200).perform();
+    }
+
+    public Response deleteActivity(String id) {
+
+        return apiObject.delete(activitiesEndPoint + id).setContentType(ContentType.JSON).setTargetStatusCode(200).perform();
     }
 
 }

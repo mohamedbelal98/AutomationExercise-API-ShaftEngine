@@ -38,7 +38,7 @@
   </parameter>
   <parameter>
     <key>sun.java.command</key>
-    <value>com.intellij.rt.testng.RemoteTestNGStarter -usedefaultlisteners false -socket50815 @w@/private/var/folders/rw/71w5dnwx2wv0z91fd1fjyjfc0000gn/T/idea_working_dirs_testng.tmp -temp /private/var/folders/rw/71w5dnwx2wv0z91fd1fjyjfc0000gn/T/idea_testng.tmp</value>
+    <value>com.intellij.rt.testng.RemoteTestNGStarter -usedefaultlisteners false -socket52978 @w@/private/var/folders/rw/71w5dnwx2wv0z91fd1fjyjfc0000gn/T/idea_working_dirs_testng.tmp -temp /private/var/folders/rw/71w5dnwx2wv0z91fd1fjyjfc0000gn/T/idea_testng.tmp</value>
   </parameter>
   <parameter>
     <key>jdk.debug</key>
@@ -238,7 +238,7 @@
   </parameter>
   <parameter>
     <key>baseUrl</key>
-    <value>https://fakerestapi.azurewebsites.net</value>
+    <value>https://fakerestapi.azurewebsites.net/api/v1/</value>
   </parameter>
   <parameter>
     <key>java.vm.info</key>
@@ -282,7 +282,7 @@
   </parameter>
   <parameter>
     <key>activitiesEndPoint</key>
-    <value>/api/v1/Activities/</value>
+    <value>Activities/</value>
   </parameter>
   <parameter>
     <key>socksNonProxyHosts</key>
