@@ -38,7 +38,7 @@
   </parameter>
   <parameter>
     <key>sun.java.command</key>
-    <value>com.intellij.rt.testng.RemoteTestNGStarter -usedefaultlisteners false -socket52978 @w@/private/var/folders/rw/71w5dnwx2wv0z91fd1fjyjfc0000gn/T/idea_working_dirs_testng.tmp -temp /private/var/folders/rw/71w5dnwx2wv0z91fd1fjyjfc0000gn/T/idea_testng.tmp</value>
+    <value>com.intellij.rt.testng.RemoteTestNGStarter -usedefaultlisteners false -socket51956 @w@/private/var/folders/rw/71w5dnwx2wv0z91fd1fjyjfc0000gn/T/idea_working_dirs_testng.tmp -temp /private/var/folders/rw/71w5dnwx2wv0z91fd1fjyjfc0000gn/T/idea_testng.tmp</value>
   </parameter>
   <parameter>
     <key>jdk.debug</key>
@@ -155,6 +155,10 @@
   <parameter>
     <key>user.timezone</key>
     <value>Africa/Cairo</value>
+  </parameter>
+  <parameter>
+    <key>booksEndPoint</key>
+    <value>Books/</value>
   </parameter>
   <parameter>
     <key>java.vm.specification.version</key>
@@ -281,6 +285,10 @@
     <value>radwa</value>
   </parameter>
   <parameter>
+    <key>authorsEndPoint</key>
+    <value>Authors/</value>
+  </parameter>
+  <parameter>
     <key>activitiesEndPoint</key>
     <value>Activities/</value>
   </parameter>
@@ -315,6 +323,10 @@
   <parameter>
     <key>user.language</key>
     <value>en</value>
+  </parameter>
+  <parameter>
+    <key>usersEndPoint</key>
+    <value>Users/</value>
   </parameter>
   <parameter>
     <key>cucumber.execution.dry-run</key>
@@ -359,6 +371,10 @@
   <parameter>
     <key>java.vm.version</key>
     <value>17.0.7+7-LTS</value>
+  </parameter>
+  <parameter>
+    <key>coverPhotosEndPoint</key>
+    <value>CoverPhotos/</value>
   </parameter>
   <parameter>
     <key>cucumber.glue</key>

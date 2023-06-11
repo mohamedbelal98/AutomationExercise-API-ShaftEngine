@@ -19,21 +19,37 @@ public class ActivitiesRequest {
         return apiObject.get(activitiesEndPoint).setContentType(ContentType.JSON).setTargetStatusCode(200).perform();
     }
 
+    /**
+     * @param requestBody set request body
+     * @return Activity
+     */
     public Response createActivity(JSONObject requestBody) {
 
         return apiObject.post(activitiesEndPoint).setContentType(ContentType.JSON).setRequestBody(requestBody).setTargetStatusCode(200).perform();
     }
 
+    /**
+     * @param id put specific id to get details
+     * @return SingleActivity
+     */
     public Response getSingleActivityByID(String id) {
 
         return apiObject.get(activitiesEndPoint + id).setContentType(ContentType.JSON).setTargetStatusCode(200).perform();
     }
 
+    /**
+     * @param id          put specific id to update activity
+     * @param requestBody set request body
+     * @return Activity
+     */
     public Response updateActivity(String id, JSONObject requestBody) {
 
         return apiObject.put(activitiesEndPoint + id).setContentType(ContentType.JSON).setRequestBody(requestBody).setTargetStatusCode(200).perform();
     }
 
+    /**
+     * @param id put specific id to delete activity
+     */
     public Response deleteActivity(String id) {
 
         return apiObject.delete(activitiesEndPoint + id).setContentType(ContentType.JSON).setTargetStatusCode(200).perform();

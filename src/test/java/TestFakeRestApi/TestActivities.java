@@ -26,7 +26,7 @@ public class TestActivities {
 
     @Test(description = "Get All Activities")
     @Epic("Activities")
-    public void getAllActivities() {
+    public void testGetAllActivities() {
 
         Response getActivities = activitiesRequest.getAllActivities();
 
@@ -38,7 +38,7 @@ public class TestActivities {
 
     @Test(description = "Create Activity")
     @Epic("Activities")
-    public void createActivity() {
+    public void testCreateActivity() {
 
         String title = jsonFileManager.getTestData("title");
         String dueDate = jsonFileManager.getTestData("dueDate");
@@ -68,7 +68,7 @@ public class TestActivities {
 
     @Test(description = "Get Single Activity By ID")
     @Epic("Activities")
-    public void getSingleActivity() {
+    public void testGetSingleActivity() {
 
         String id = "2";
 
@@ -91,7 +91,7 @@ public class TestActivities {
 
     @Test(description = "Update Activity information for Single Activity")
     @Epic("Activities")
-    public void updateActivity() {
+    public void testUpdateActivity() {
 
         String id = "5";
         String title = jsonFileManager.getTestData("title");
@@ -128,7 +128,7 @@ public class TestActivities {
 
     @Test(description = "Delete an Activity")
     @Epic("Activities")
-    public void deleteActivity() {
+    public void testDeleteActivity() {
 
         String id = "13";
 
